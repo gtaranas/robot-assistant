@@ -1,10 +1,20 @@
+## Design
+
+> how to apply cqrs to bots
+
+chat text -> nlp -> command dispacher -> eventstore
+chat text -> nlp -> agreggators -> repository 
+
+
+## Resource collection
+
 > How to use AWS Fargate and Lambda for long-running processes in a Serverless app 
 https://serverless.com/blog/serverless-application-for-long-running-process-fargate-lambda/
 
 >  Deploy containers using Elastic Container Service and CloudFormation 
 https://github.com/awslabs/aws-cloudformation-templates/tree/master/aws/services/ECS
 
-> awesome-ecs 
+> Awesome-ecs 
 https://github.com/nathanpeck/awesome-ecs#self-hosted-in-ec2
 
 > Engage users through the Google Assistant 
@@ -24,3 +34,14 @@ https://github.com/kbastani/event-stream-processing-microservices
 
 > Serverless stack
 https://s3.amazonaws.com/anomaly/ServerlessStack/ServerlessStack-v1.2.5.pdf
+
+> UI - UX 
+https://uimovement.com/ | https://uxdesign.cc/ | https://material.io/guidelines/motion/material-motion.html | http://animejs.com
+
+> Material design frameworks
+https://github.com/stasson/vue-mdc-adapter
+
+> Tools for building a bot
+https://botkit.ai/ | https://github.com/botui/botui | https://botpress.io/
+
+---

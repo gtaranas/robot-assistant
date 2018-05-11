@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/hubot-natural-js/bin/hubot",
+            "args": [
+                "-a rocketchat"
+            ],
+            "env": {
+                "HUBOT_ADAPTER": "rocketchat",
+                "HUBOT_NAME": "Hubot Natural",
+                "HUBOT_OWNER": "RocketChat",
+                "HUBOT_DESCRIPTION": "Hubot natural language processing",
+                "HUBOT_LOG_LEVEL": "debug",
+                "HUBOT_CORPUS": "training_data/corpus.yml",
+                "HUBOT_RECURSIVE_TRAINING": false,
+                "HUBOT_LANG": "en",
+                "RESPOND_TO_DM": true,
+                "RESPOND_TO_LIVECHAT": true,
+                "RESPOND_TO_EDITED": true,
+                "LISTEN_ON_ALL_PUBLIC": false,
+                "ROCKETCHAT_AUTH": "password",
+                "ROCKETCHAT_URL": "http://rocketchat:3000",
+                "ROCKETCHAT_ROOM": "GENERAL",
+                "ROCKETCHAT_USER": "hubot",
+                "ROCKETCHAT_PASSWORD": "1234",
+                "HUBOT_NATURAL_DEBUG_MODE": true,
+                "LIVECHAT_DEPARTMENT_ID": "<LIVECHAT_DEPARTMENT_ID>"
+            }
+        }
+    ]
+}

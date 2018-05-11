@@ -1,0 +1,28 @@
+#!/bin/sh
+
+set -e
+
+npm install
+export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
+
+export HUBOT_ADAPTER=rocketchat
+export HUBOT_NAME='Hubot Natural'
+export HUBOT_OWNER=RocketChat
+export HUBOT_DESCRIPTION='Hubot natural language processing'
+export HUBOT_LOG_LEVEL=debug
+export HUBOT_CORPUS=training_data/corpus.yml
+export HUBOT_RECURSIVE_TRAINING=false
+export HUBOT_LANG=en
+export RESPOND_TO_DM=true
+export RESPOND_TO_LIVECHAT=true
+export RESPOND_TO_EDITED=true
+export LISTEN_ON_ALL_PUBLIC=false
+export ROCKETCHAT_AUTH=password
+export ROCKETCHAT_URL=localhost:3000
+export ROCKETCHAT_ROOM=GENERAL
+export ROCKETCHAT_USER=hubot
+export ROCKETCHAT_PASSWORD=1234
+export HUBOT_NATURAL_DEBUG_MODE=true
+export LIVECHAT_DEPARTMENT_ID='<LIVECHAT_DEPARTMENT_ID>'
+
+exec node_modules/.bin/hubot --name "mybot" "$@"
